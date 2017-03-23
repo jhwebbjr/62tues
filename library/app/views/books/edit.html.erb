@@ -1,0 +1,12 @@
+<%= form_tag "/books/#{@book.id}", method: "patch" do %>
+  <%= label_tag "book[title]", "title", class: "form-control" %>
+  <%= text_field_tag "book[title]", @book.title %>
+
+  <%= label_tag "book[isbn]", "isbn", class: "form-control" %>
+  <%= text_field_tag "book[isbn]", @book.isbn %>
+
+  <%= label_tag "book[description]," %>
+  <%= text_field_tag "book[description]", @book.description %>
+
+  <%= submit_tag %>
+<% end %>

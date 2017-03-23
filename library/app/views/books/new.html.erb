@@ -1,0 +1,12 @@
+<%= form_tag "/books" do %>
+  <%= label_tag "book[title]", "books", class: "form-control" %>
+  <%= text_field_tag "book[title]" %>
+
+  <%= label_tag "book[isbn]", "isbn", class: "form-control" %>
+  <%= text_field_tag "book[isbn]" %>
+
+  <%= label_tag "book[description]", "description", class: "form-control" %>
+  <%= text_field_tag "book[description]" %>
+
+  <%= submit_tag %>
+<% end %>

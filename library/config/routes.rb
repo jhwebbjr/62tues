@@ -3,11 +3,14 @@ Rails.application.routes.draw do
 
   get "/books", controller: "books", action: "collection"
 
-  # post "/books", controller: "", action: ""
+  get "/books/new", controller: "books", action: "new"
+
+  post "/books", controller: "books", action: "create"
   #
-  # get "/books/:id", controller: "", action: ""
+  get "/books/:id", controller: "books", action: "find"
   #
-  # patch "/books/:id", controller: "", action: ""
+  get "/books/:id/edit", controller: "books", action: "edit"
   #
+  patch "/books/:id", controller: "books", action: "update"
   # delete "/books/:id", controller: "", action: ""
 end
